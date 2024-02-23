@@ -3,4 +3,4 @@ A simple script to automate the recognition phase in ethical hacking with kali l
 
 Usage: ./autoRecon.sh [targetIP]
 
-This script uses DirSearch so you must have it installed
+This script uses DirSearch so you must have it installed (apt install dirsearch)
