@@ -85,7 +85,7 @@ done < targetedPorts
 if [ "$httpServiceDetected" = true ]; then
         echo -e "\e[96mRunning directory reconnaissance over:" "\e[33m"$targetIP"\e[0m"
         echo ""
-        dirsearch -u $targetIP
+        gobuster dir -u $targetIP -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -t 200 -x php,html,kdbx,txt | tee directoryScan.txt
 fi
 
 echo""
